@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <img src="images\logokt.png" alt="logo" >
+        <a href="index.html">Home</a>
+        <!-- <a href="district.html">Districts</a> -->
+        <!-- <a href="signin.html">Sign In</a> -->
+        <a href="signup.html">Sign Up</a>
+    </nav>
+  </header>
+  <div class="Login">
+    <h1>Login</h1>
+    <div id="error"></div>
+    <form  id="form" onsubmit="return checkInputs(event)">
+          <div class="contain">
+            <input type="text" placeholder="Email Id" id="email" autocomplete="off">
+            <!-- <label for="error" id="err1"></label> -->
+          </div> 
+          <div class="contain">
+            <input type="password" placeholder="Input Password" id="pass" autocomplete="off">
+            <!-- <label for="error" id="err2"></label> -->
+          </div>
+          <input class="button" type="submit" name="" value="Sign In">
+          <p class="acc">Do not have an account?</p>
+          <div class="tagin">
+            <a href="signup.html"  class="tagged">Create One!</a>
+          </div>
+        </form>   
+  </div>
+
+  <script>
+    function checkInputs(event)
+    {
+    const email=document.getElementById('email').value;
+    const pass=document.getElementById('pass').value;
+    const error=document.getElementById('error');
+    let text;
+    var filter = /^[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/;
+    if(email == ""){
+      text="Please fill the email field";
+      // error.style.padding= "8px";
+      error.innerHTML = text;
+      return false;
+    }
+    if(email.search(filter)==-1){
+    text="Enter a valid email-id";
+    error.innerHTML=text;
+    error.style.padding="8px";
+    return false;
+  }
+  if(pass==""||pass.length<8){
+    text="Password must be atleast 8 characters long";
+    error.innerHTML=text;
+    error.style.padding="8px";
+    return false;
+  }
+    }
+  </script>
+  <footer>
+    COPYRIGHT © 2020 KERALA TOURISM | ALL RIGHTS RESERVED. 
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+
+body{
+    height: 100%;
+    background: url('images/signup.jpg') no-repeat;
+    background-size: cover;
+   
+}
+.Sign{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    background: rgba(0,0,0,0.6);
+}
+.Sign h1{
+    text-align: center;
+    font-size:40px;
+    color:#028476;
+    /* border-bottom:6px; */
+    margin: 8% 0;
+}
+.container{
+    width: 100%;
+    overflow:hidden;
+    padding: 8px 0;
+    margin: 8px 0;
+    text-align:center;
+}
+input{
+    width:70%;
+    font-size: 18px;
+    /* border:  */
+    /* background: none; */
+}
+.button{
+    text-align: center;
+    width:30%;
+    background:#028476;
+    color:white;
+    /* border: 2px solid #028476; */
+    padding: 2% 2%;
+    /* margin-bottom:24px;
+    margin-left: 12%; */
+    margin:5% 35% 10% 35%;
+    font-size: 18px;
+}
+#error{
+    text-align: center;
+    padding-bottom: 2%;
+    color:#D01110;
+    font-weight:600;
+}
+.Strength{
+    margin-top:3%;
+    margin-left:19%;
+}

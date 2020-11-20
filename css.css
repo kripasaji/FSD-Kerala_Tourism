@@ -1,0 +1,49 @@
+body{
+    margin:0;
+    height:100%;
+    /* background: url('kerala.png') no-repeat;
+    background-size: cover; */
+}
+.navbar{
+    background: linear-gradient(to right, #00D1D1,#603F8B);
+    margin-top:0;
+}
+.navbar a{
+    float: right;
+    color:#ffffff;
+    padding: 10px;
+    border: 2px solid;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
+    text-decoration: none;
+}
+.navbar img{
+    height: 5rem;
+    width: 9rem;
+    padding:2px;
+}
+.main{
+    margin-top:25%;
+}
+.main h1,h2,h3{
+    font-size: 42px;
+    color: black;
+    margin-left: 20%;
+}
+.main h2{
+    font-size: 35px;
+}
+.main h3{
+    font-size: 30px; 
+}
+footer{
+    background-color:#341948;
+    color:white;
+    text-align:center;
+    height:2em;
+    bottom:0;
+    position:fixed;
+    width:100%;
+}
